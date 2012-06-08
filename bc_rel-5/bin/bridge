@@ -6,9 +6,17 @@ if [ -z "`which rabbitmq-server 2>&1 | grep -P "^/"`" && ! -x "./rabbitmq-server
     exit 1
 fi
 
-# TODO: Check for upgrades.
-
+# Check for upgrades. Will not work until we get gh:bridge.
+CURRENT_VERSION=`curl "https://raw.github.com/bridge/bridge-release/master/CURRENT_VERSION"`
+if [ "CURRENT_VERSION" != "${VER}" ]; then
+    echo "Your version of the Bridge gateway is out of date. Attempting to upgrade from ${VER} to $CURRENT_VERSION..."
+    wget -O "bridge-latest.tar.gz" "https://github.com/bridge/bridge-release/tarball/master"
+    tar -xzvf bridge-latest.tar.gz
+    . bridge-latest/upgrade "${VER}-$CURRENT_VERSION"
+    cd ..
+    rm -rf bridge-latest bridge-latest.tar.gz
+fi
 
 # Start server.
 echo "Starting the Bridge gateway..."
-. bc-latest/bin/run start
+. run start
