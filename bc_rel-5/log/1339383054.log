@@ -1,0 +1,13 @@
+
+=INFO REPORT==== 11-Jun-2012::02:50:54 ===
+Starting Bridge Gateway!
+
+=ERROR REPORT==== 11-Jun-2012::02:50:54 ===
+** System running to use fully qualified hostnames **
+** Hostname ip-10-160-125-130 is illegal **
+
+=ERROR REPORT==== 11-Jun-2012::02:50:54 ===
+Connecting using network messaging
+
+=INFO REPORT==== 11-Jun-2012::02:50:54 ===
+Establishing AMQP and declaring default and error exchange

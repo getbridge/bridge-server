@@ -1,0 +1,8 @@
+run_erl [6718] Mon Jun 11 02:50:53 2012
+Args before exec of shell:
+run_erl [6718] Mon Jun 11 02:50:53 2012
+argv[0] = sh
+run_erl [6718] Mon Jun 11 02:50:53 2012
+argv[1] = -c
+run_erl [6718] Mon Jun 11 02:50:53 2012
+argv[2] = exec /home/ec2-user/bridge-server/bc_rel-5/bin/server console 
