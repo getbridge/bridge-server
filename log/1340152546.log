@@ -1,0 +1,38 @@
+
+=INFO REPORT==== 19-Jun-2012::17:35:46 ===
+Starting Bridge Gateway!
+
+=ERROR REPORT==== 19-Jun-2012::17:35:46 ===
+** System running to use fully qualified hostnames **
+** Hostname empress is illegal **
+
+=ERROR REPORT==== 19-Jun-2012::17:35:46 ===
+Connecting using network messaging
+
+=INFO REPORT==== 19-Jun-2012::17:35:46 ===
+Establishing AMQP and declaring default and error exchange
+
+=ERROR REPORT==== 19-Jun-2012::17:35:46 ===
+Error #206 : in add server to redirector: {failed_connect,
+                                           [{to_address,
+                                             {"ip-10-248-14-114.us-west-2.compute.internal",
+                                              7001}},
+                                            {inet,[inet],nxdomain}]}
+
+=ERROR REPORT==== 19-Jun-2012::17:35:56 ===
+Error #208 : Failed to send server usage to redirector: {failed_connect,
+                                                         [{to_address,
+                                                           {"ip-10-248-14-114.us-west-2.compute.internal",
+                                                            7001}},
+                                                          {inet,
+                                                           [inet],
+                                                           nxdomain}]}
+
+=ERROR REPORT==== 19-Jun-2012::17:36:06 ===
+Error #208 : Failed to send server usage to redirector: {failed_connect,
+                                                         [{to_address,
+                                                           {"ip-10-248-14-114.us-west-2.compute.internal",
+                                                            7001}},
+                                                          {inet,
+                                                           [inet],
+                                                           nxdomain}]}

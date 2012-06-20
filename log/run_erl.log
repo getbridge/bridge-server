@@ -1,0 +1,8 @@
+run_erl [47758] Tue Jun 19 17:35:43 2012
+Args before exec of shell:
+run_erl [47758] Tue Jun 19 17:35:43 2012
+argv[0] = sh
+run_erl [47758] Tue Jun 19 17:35:43 2012
+argv[1] = -c
+run_erl [47758] Tue Jun 19 17:35:43 2012
+argv[2] = exec /home/aa/ugrad/sjwang/workspace/bridge-gateway/gateway/rel/bc-latest/bin/start console 
