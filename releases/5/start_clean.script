@@ -1,4 +1,4 @@
-%% script generated at {2012,6,13} {18,57,8}
+%% script generated at {2012,6,20} {0,18,38}
 {script,
     {"start_clean",[]},
     [{preLoaded,
@@ -454,8 +454,15 @@
                    {included_applications,[]},
                    {env,
                        [{hostname,"localhost"},
+                        {secure,true},
+                        {certfile,"STAR_getbridge_com.crt"},
+                        {cacertfile,"PositiveSSLCA2.crt"},
+                        {keyfile,"flotype_key.pem"},
+                        {password,"5K2**iZr"},
                         {web_port,8091},
                         {tcp_port,8090},
+                        {https_port,8043},
+                        {ssl_port,8093},
                         {redirector_url,"http://localhost:7001/ctl/"},
                         {ctl_port,7002},
                         {reconnect_timeout,5000},
