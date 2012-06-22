@@ -563,7 +563,7 @@ EXTERN ErlDrvTermData driver_connected(ErlDrvPort);
 EXTERN ErlDrvTermData driver_caller(ErlDrvPort);
 extern const ErlDrvTermData driver_term_nil;
 EXTERN ErlDrvTermData driver_mk_term_nil(void);
-EXTERN ErlDrvPort driver_create_port(ErlDrvPort creator_port, 
+EXTERN long driver_create_port(long creator_port, 
 				     ErlDrvTermData connected, /* pid */
 				     char* name, /* driver name */
 				     ErlDrvData drv_data);
