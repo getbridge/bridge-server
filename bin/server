@@ -2,12 +2,6 @@
 # -*- tab-width:4;indent-tabs-mode:nil -*-
 # ex: ts=4 sw=4 et
 
-# The lines below shamelessly adapted from .drobox-dist/dropboxd of
-# Dropbox's generic UNIX installation.
-PAR=$(dirname $(readlink -f $0))/../local/lib
-OLD_LD_LIBRARY_PATH=$LD_LIBRARY_PATH
-LD_LIBRARY_PATH=$PAR/local/lib${LD_LIBRARY_PATH:+:}$LD_LIBRARY_PATH
-
 RUNNER_SCRIPT_DIR=$(cd ${0%/*} && pwd)
 
 RUNNER_BASE_DIR=${RUNNER_SCRIPT_DIR%/*}
