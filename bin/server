@@ -63,6 +63,8 @@ case "$1" in
         export HEART_COMMAND
         mkdir -p $PIPE_DIR
         shift # remove $1
+        tail -n0 -f $RUNNER_LOG_DIR/erlang.log.1 &
+        echo $! > $RUNNER_LOG_DIR/tail_pid.log
         $ERTS_PATH/run_erl -daemon $PIPE_DIR $RUNNER_LOG_DIR "exec $RUNNER_BASE_DIR/bin/$SCRIPT console $@" 2>&1
         ;;
 
@@ -93,6 +95,10 @@ case "$1" in
         do
             sleep 1
         done
+        if [ -f $RUNNER_LOG_DIR/tail_pid.log ]; then
+            cat $RUNNER_LOG_DIR/tail_pid.log | xargs kill
+            rm $RUNNER_LOG_DIR/tail_pid.log
+        fi
         ;;
 
     restart)
